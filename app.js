@@ -14,7 +14,7 @@ mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, u
     .then(() => console.log("Database Connected Successfully"))
     .catch(err => console.log(err));
 const userRouter = require('./routes/User');
-app.use('/',userRouter);
+app.use('/user',userRouter);
 
 
 const sessionRouter = require('./routes/Session');
