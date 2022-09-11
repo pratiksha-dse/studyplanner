@@ -20,7 +20,7 @@ export default function App() {
         <StudentRoute exact path="/sessions" component={StudentSession} />
         <StudentRoute path="/session" component={SessionView} />
         <StudentRoute path="/enroll_session" component={EnrollSessionView} />
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
